@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <title>CSS Position and Overflow</title>
+    </head>
+    <style media="screen">
+        .container{
+            width: 50%;
+            height: 200px;
+            overflow: auto;
+            margin-left: 0 auto;
+        }
+        .static{
+            position: static;
+            border: 2px solid green;
+        }
+        .relative{
+            position: relative;
+            border: 2px solid red;
+            left: 20px; /*jarak dari posisi paling kiri*/
+            bottom: 0; /*jarak dari posisi paling bawah*/
+        }
+        .absolute{
+            position: absolute;
+            border: 2px solid blue;
+            left: 20px;
+            bottom: 40px;
+        }
+        .fixed{
+            position: fixed;
+            border: 2px solid black;
+            bottom: 0;
+            right: 0;
+        }
+        .sticky{
+            position: sticky;
+            border: 2px solid yellow;
+            top: 0;
+            left: 20px;
+            background: darkblue;
+            color: white;
+        }
+    </style>
+    <body>
+        <div class="container">
+            <p class="sticky">Ini adalah contoh dari posisi sticky</p>
+            <p class="static">
+                <b>Ini adalah contoh posisi static</b>
+                <br>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos eos, id beatae incidunt ducimus blanditiis asperiores veritatis iure impedit eveniet doloribus debitis cupiditate explicabo autem molestiae temporibus architecto delectus eum.
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum officia molestiae iste ut minus ipsam deleniti magni! Corrupti sit expedita natus laudantium cum cumque sint esse commodi, laboriosam enim soluta?
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Earum reprehenderit quisquam porro nihil, vitae temporibus asperiores veritatis eos quos magni tempore aliquam non necessitatibus qui architecto ipsa optio, obcaecati a.
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Iusto, voluptates voluptas. Accusantium atque reiciendis at sed vel enim, molestias eligendi illum consequatur voluptatum autem mollitia veritatis necessitatibus in. Velit, aliquid!
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis dicta ipsa enim corporis iure sed accusamus rem nihil sequi? Sunt ratione id iusto debitis consequuntur tempore vel praesentium corrupti excepturi.
+            </p>
+            <p class="relative">
+                <b>Ini adalah contoh posisi relative</b>
+                <br>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Adipisci tenetur modi nemo ea dolor, sequi saepe at ratione in eos, animi exercitationem. Iure hic quibusdam magnam, facilis voluptate itaque quam.
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime dicta impedit assumenda harum illo! Ipsum aspernatur sequi nobis ad, minus molestias quo quis quasi fugit sunt rerum aliquid rem quisquam?
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam nam consequatur alias doloribus molestiae sunt debitis, id nulla consequuntur neque qui? Quia quaerat quidem explicabo sequi est tempora? Asperiores, iure!
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cum rerum tenetur perspiciatis necessitatibus soluta fugit alias. Itaque ipsa nostrum id, temporibus quas, suscipit odio corporis cum molestiae voluptates nulla illo.
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Commodi soluta nam quo consequuntur deleniti error dolore unde, blanditiis, delectus esse ullam, reiciendis numquam qui praesentium corporis aut quibusdam tempore? Inventore?
+            </p>
+            <p class="absolute">
+                <b>Ini adalah contoh dasi posisi absolute</b>
+                <br>Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto autem incidunt, sunt maxime perferendis repudiandae fuga doloremque omnis provident iusto, neque fugit voluptates repellendus necessitatibus eaque tempora amet illum aliquid?
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam eius illo tempora asperiores mollitia iusto provident tempore blanditiis dolorem laboriosam tenetur, eum voluptatum. Itaque tempora eligendi quibusdam laborum id tenetur!
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ad accusantium recusandae vitae? Vel, sint impedit laboriosam ad molestiae corporis quibusdam accusantium. Ullam laboriosam ut velit facilis ducimus nihil aperiam atque!
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur atque quaerat delectus repellat quam, incidunt nemo minima nesciunt eaque blanditiis quae et, voluptatibus neque quos repellendus quis dolorum? Nemo, quibusdam?
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perferendis aut, voluptatem nemo velit quam dolorum aperiam beatae cupiditate? Totam quam hic laboriosam delectus amet soluta quos quo voluptate quis nam.
+            </p>
+            <p class="fixed">
+                Ini merupakan contoh dari posisi fixed
+            </p>
+        </div>
+    </body>
+</html>
